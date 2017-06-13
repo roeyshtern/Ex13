@@ -132,13 +132,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String selectQuery = "SELECT  * FROM " + ItemEntry.TABLE_ITEMS;
         switch (sortBy){
         case SORT_BY_NUMS:
-        	selectQuery += " ORDER BY " + ItemEntry.KEY_NUMBER + " DESC";
+        	selectQuery += " ORDER BY " + ItemEntry.KEY_NUMBER + " ASC";
         	break;
         case SORT_BY_COLORS:
         	selectQuery += " ORDER BY " + ItemEntry.KEY_COLOR + " DESC";
         	break;
         case SHUFFLE:
-        	selectQuery += " ORDER BY " + ItemEntry.KEY_NUMBER + " DESC";
+        	selectQuery += " ORDER BY " + ItemEntry.KEY_ID + " DESC";
         	break;
         }
         Cursor cursor = db.rawQuery(selectQuery, null);

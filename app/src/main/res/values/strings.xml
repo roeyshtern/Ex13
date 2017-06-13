@@ -3,4 +3,5 @@
     <string name="btShuffleText">Shuffle</string>
     <string name="btSortColors">Sort by colors</string>
     <string name="btSortNumbers">Sort by numbers</string>
+    <string name="tvText">...</string>
 </resources>

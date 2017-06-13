@@ -9,7 +9,7 @@ public class Item {
     public int number;
     public int color;
 
-    public Item(int number, long id, int color) {
+    public Item(long id,int number, int color) {
         this.number = number;
         this.id = id;
         this.color = color;
